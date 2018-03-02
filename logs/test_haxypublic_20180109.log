@@ -1,0 +1,91 @@
+2018-01-09 10:57:02,776[DEBUG][10582][140523012540160][15]kafka获取到的数据为:['2018-01-05 00:00:01|1|nk_nhnbz7wnuj65a8v715|1009190|\xe5\x93\x8e\xe5\x91\xa6\xe5\x98\xbf|96|591|868966024034582|48640|DeviceLogoutLog']
+2018-01-09 10:57:02,788[DEBUG][10582][140523012540160][23]开始deviceonline处理!!!!
+2018-01-09 10:57:02,810[DEBUG][10582][140523012540160][25]开始uuiddevice处理!!!!
+2018-01-09 10:57:02,810[ERROR][10582][140523012540160][240]Exception in bolt.run
+Traceback (most recent call last):
+  File "/data/storm/supervisor/stormdist/niku_logbolt-215-1515466334/resources/pyleus_venv/lib/python2.7/site-packages/pyleus/storm/component.py", line 238, in run
+    self.run_component()
+  File "/data/storm/supervisor/stormdist/niku_logbolt-215-1515466334/resources/pyleus_venv/lib/python2.7/site-packages/pyleus/storm/bolt.py", line 49, in run_component
+    self._process_tuple(tup)
+  File "/data/storm/supervisor/stormdist/niku_logbolt-215-1515466334/resources/pyleus_venv/lib/python2.7/site-packages/pyleus/storm/bolt.py", line 175, in _process_tuple
+    self.process_tuple(tup)
+  File "/data/storm/supervisor/stormdist/niku_logbolt-215-1515466334/resources/niku_logbolt/bolt_kafka_haxypublic.py", line 26, in process_tuple
+    haxypublic_handle_logic_obj.uuiddevice()
+  File "module/haxypubliclogic.py", line 64, in uuiddevice
+    key = self.handle_key_obj.all_time_key("UUIDDEVICE")
+  File "key/handlekey_haxy.py", line 46, in all_time_key
+    all_time_key = 'ROYAL:%s:%s:all' % (datatype,game_id)
+NameError: global name 'game_id' is not defined
+2018-01-09 10:59:28,066[DEBUG][12474][140142496302848][15]kafka获取到的数据为:['2018-01-05 00:00:01|1|nk_nhnbz7wnuj65a8v715|1009190|\xe5\x93\x8e\xe5\x91\xa6\xe5\x98\xbf|96|591|868966024034582|48640|DeviceLogoutLog']
+2018-01-09 10:59:28,071[DEBUG][12474][140142496302848][23]开始deviceonline处理!!!!
+2018-01-09 10:59:28,082[DEBUG][12474][140142496302848][25]开始uuiddevice处理!!!!
+2018-01-09 10:59:28,082[DEBUG][12474][140142496302848][65]对应的key为:ROYAL:UUIDDEVICE:NIK-AHXY:all,filed为:['nk_nhnbz7wnuj65a8v715']
+2018-01-09 10:59:28,082[DEBUG][12474][140142496302848][67]当前value值为:None
+2018-01-09 10:59:28,083[ERROR][12474][140142496302848][240]Exception in bolt.run
+Traceback (most recent call last):
+  File "/data/storm/supervisor/stormdist/niku_logbolt-216-1515466760/resources/pyleus_venv/lib/python2.7/site-packages/pyleus/storm/component.py", line 238, in run
+    self.run_component()
+  File "/data/storm/supervisor/stormdist/niku_logbolt-216-1515466760/resources/pyleus_venv/lib/python2.7/site-packages/pyleus/storm/bolt.py", line 49, in run_component
+    self._process_tuple(tup)
+  File "/data/storm/supervisor/stormdist/niku_logbolt-216-1515466760/resources/pyleus_venv/lib/python2.7/site-packages/pyleus/storm/bolt.py", line 175, in _process_tuple
+    self.process_tuple(tup)
+  File "/data/storm/supervisor/stormdist/niku_logbolt-216-1515466760/resources/niku_logbolt/bolt_kafka_haxypublic.py", line 26, in process_tuple
+    haxypublic_handle_logic_obj.uuiddevice()
+  File "module/haxypubliclogic.py", line 68, in uuiddevice
+    newvalue = value + '' + equipmentid
+TypeError: unsupported operand type(s) for +: 'NoneType' and 'str'
+2018-01-09 11:03:07,827[DEBUG][13544][140317955823360][15]kafka获取到的数据为:['2018-01-05 00:00:01|1|nk_nhnbz7wnuj65a8v715|1009190|\xe5\x93\x8e\xe5\x91\xa6\xe5\x98\xbf|96|591|868966024034582|48640|DeviceLogoutLog']
+2018-01-09 11:03:07,831[DEBUG][13544][140317955823360][23]开始deviceonline处理!!!!
+2018-01-09 11:03:07,843[DEBUG][13544][140317955823360][25]开始uuiddevice处理!!!!
+2018-01-09 11:03:07,844[DEBUG][13544][140317955823360][65]对应的key为:ROYAL:UUIDDEVICE:NIK-AHXY:all,filed为:['nk_nhnbz7wnuj65a8v715']
+2018-01-09 11:03:07,844[DEBUG][13544][140317955823360][67]当前value值为:None
+2018-01-09 11:09:13,587[DEBUG][15138][139873515300608][15]kafka获取到的数据为:['2018-01-05 00:00:01|1|nk_nhnbz7wnuj65a8v715|1009190|\xe5\x93\x8e\xe5\x91\xa6\xe5\x98\xbf|96|591|868966024034582|48640|DeviceLogoutLog']
+2018-01-09 11:09:13,592[DEBUG][15138][139873515300608][23]开始deviceonline处理!!!!
+2018-01-09 11:09:13,607[DEBUG][15138][139873515300608][25]开始uuiddevice处理!!!!
+2018-01-09 11:09:13,607[DEBUG][15138][139873515300608][65]对应的key为:ROYAL:UUIDDEVICE:NIK-AHXY:all,filed为:nk_nhnbz7wnuj65a8v715
+2018-01-09 11:09:13,608[DEBUG][15138][139873515300608][67]当前value值为:None
+2018-01-09 11:09:13,608[DEBUG][15138][139873515300608][72]新的value值为:None
+2018-01-09 11:11:35,529[DEBUG][16058][139923907061504][15]kafka获取到的数据为:['2018-01-05 00:00:01|1|nk_nhnbz7wnuj65a8v715|1009190|\xe5\x93\x8e\xe5\x91\xa6\xe5\x98\xbf|96|591|868966024034582|48640|DeviceLogoutLog']
+2018-01-09 11:11:35,533[DEBUG][16058][139923907061504][23]开始deviceonline处理!!!!
+2018-01-09 11:11:35,550[DEBUG][16058][139923907061504][25]开始uuiddevice处理!!!!
+2018-01-09 11:11:35,550[DEBUG][16058][139923907061504][65]对应的key为:ROYAL:UUIDDEVICE:NIK-AHXY:all,filed为:nk_nhnbz7wnuj65a8v715
+2018-01-09 11:11:35,550[DEBUG][16058][139923907061504][67]当前value值为:None
+2018-01-09 11:11:35,551[DEBUG][16058][139923907061504][72]新的value值为:None868966024034582
+2018-01-09 11:14:42,759[WARNING][16058][139923907061504][51]Disconnected from Storm. Exiting.
+2018-01-09 11:15:18,368[DEBUG][17144][140354035488512][15]kafka获取到的数据为:['2018-01-05 00:00:01|1|nk_nhnbz7wnuj65a8v715|1009190|\xe5\x93\x8e\xe5\x91\xa6\xe5\x98\xbf|96|591|868966024034582|48640|DeviceLogoutLog']
+2018-01-09 11:15:18,373[DEBUG][17144][140354035488512][23]开始deviceonline处理!!!!
+2018-01-09 11:15:18,395[DEBUG][17144][140354035488512][25]开始uuiddevice处理!!!!
+2018-01-09 11:15:18,396[DEBUG][17144][140354035488512][65]对应的key为:ROYAL:UUIDDEVICE:NIK-AHXY:all,filed为:nk_nhnbz7wnuj65a8v715
+2018-01-09 11:15:18,399[DEBUG][17144][140354035488512][67]当前value值为:None
+2018-01-09 11:15:18,399[DEBUG][17144][140354035488512][72]新的value值为:868966024034582
+2018-01-09 11:15:56,845[DEBUG][17144][140354035488512][15]kafka获取到的数据为:['2018-01-05 00:00:01|1|nk_nhnbz7wnuj65a8v715|1009190|\xe5\x93\x8e\xe5\x91\xa6\xe5\x98\xbf|96|591|868966024034583|48640|DeviceLogoutLog']
+2018-01-09 11:15:56,845[DEBUG][17144][140354035488512][23]开始deviceonline处理!!!!
+2018-01-09 11:15:56,849[DEBUG][17144][140354035488512][25]开始uuiddevice处理!!!!
+2018-01-09 11:15:56,852[DEBUG][17144][140354035488512][65]对应的key为:ROYAL:UUIDDEVICE:NIK-AHXY:all,filed为:nk_nhnbz7wnuj65a8v715
+2018-01-09 11:15:56,852[DEBUG][17144][140354035488512][67]当前value值为:868966024034582
+2018-01-09 11:15:56,852[DEBUG][17144][140354035488512][72]新的value值为:868966024034582868966024034583
+2018-01-09 11:17:52,742[DEBUG][17988][139981350479616][15]kafka获取到的数据为:['2018-01-05 00:00:01|1|nk_nhnbz7wnuj65a8v715|1009190|\xe5\x93\x8e\xe5\x91\xa6\xe5\x98\xbf|96|591|868966024034583|48640|DeviceLogoutLog']
+2018-01-09 11:17:52,744[DEBUG][17988][139981350479616][23]开始deviceonline处理!!!!
+2018-01-09 11:17:52,753[DEBUG][17988][139981350479616][25]开始uuiddevice处理!!!!
+2018-01-09 11:17:52,753[DEBUG][17988][139981350479616][65]对应的key为:ROYAL:UUIDDEVICE:NIK-AHXY:all,filed为:nk_nhnbz7wnuj65a8v715
+2018-01-09 11:17:52,754[DEBUG][17988][139981350479616][67]当前value值为:None
+2018-01-09 11:17:52,754[DEBUG][17988][139981350479616][72]新的value值为:868966024034583
+2018-01-09 11:18:14,985[DEBUG][17988][139981350479616][15]kafka获取到的数据为:['2018-01-05 00:00:01|1|nk_nhnbz7wnuj65a8v715|1009190|\xe5\x93\x8e\xe5\x91\xa6\xe5\x98\xbf|96|591|868966024034582|48640|DeviceLogoutLog']
+2018-01-09 11:18:14,985[DEBUG][17988][139981350479616][23]开始deviceonline处理!!!!
+2018-01-09 11:18:14,986[DEBUG][17988][139981350479616][25]开始uuiddevice处理!!!!
+2018-01-09 11:18:14,986[DEBUG][17988][139981350479616][65]对应的key为:ROYAL:UUIDDEVICE:NIK-AHXY:all,filed为:nk_nhnbz7wnuj65a8v715
+2018-01-09 11:18:14,987[DEBUG][17988][139981350479616][67]当前value值为:868966024034583
+2018-01-09 11:18:14,987[DEBUG][17988][139981350479616][72]新的value值为:868966024034583 868966024034582
+2018-01-09 11:18:37,300[DEBUG][17988][139981350479616][15]kafka获取到的数据为:['2018-01-05 00:00:01|1|nk_nhnbz7wnuj65a8v715|1009190|\xe5\x93\x8e\xe5\x91\xa6\xe5\x98\xbf|96|591|868966024034584|48640|DeviceLogoutLog']
+2018-01-09 11:18:37,301[DEBUG][17988][139981350479616][23]开始deviceonline处理!!!!
+2018-01-09 11:18:37,302[DEBUG][17988][139981350479616][25]开始uuiddevice处理!!!!
+2018-01-09 11:18:37,302[DEBUG][17988][139981350479616][65]对应的key为:ROYAL:UUIDDEVICE:NIK-AHXY:all,filed为:nk_nhnbz7wnuj65a8v715
+2018-01-09 11:18:37,305[DEBUG][17988][139981350479616][67]当前value值为:868966024034583 868966024034582
+2018-01-09 11:18:37,305[DEBUG][17988][139981350479616][72]新的value值为:868966024034583 868966024034582 868966024034584
+2018-01-09 11:19:07,358[DEBUG][17988][139981350479616][15]kafka获取到的数据为:['2018-01-05 00:00:01|1|nk_nhnbz7wnuj65a8v714|1009190|\xe5\x93\x8e\xe5\x91\xa6\xe5\x98\xbf|96|591|868966024034588|48640|DeviceLogoutLog']
+2018-01-09 11:19:07,359[DEBUG][17988][139981350479616][23]开始deviceonline处理!!!!
+2018-01-09 11:19:07,360[DEBUG][17988][139981350479616][25]开始uuiddevice处理!!!!
+2018-01-09 11:19:07,360[DEBUG][17988][139981350479616][65]对应的key为:ROYAL:UUIDDEVICE:NIK-AHXY:all,filed为:nk_nhnbz7wnuj65a8v714
+2018-01-09 11:19:07,361[DEBUG][17988][139981350479616][67]当前value值为:None
+2018-01-09 11:19:07,361[DEBUG][17988][139981350479616][72]新的value值为:868966024034588
+2018-01-10 10:29:29,369[WARNING][17988][139981350479616][51]Disconnected from Storm. Exiting.

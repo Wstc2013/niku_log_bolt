@@ -1,0 +1,94 @@
+name: niku_logbolt
+workers: 1
+topology:
+    #- spout:
+        #name: login_spout
+        #type: kafka
+        #options:
+            #配置kafka的topic
+            #topic: LOGIN
+            #配置zookeeper地址，多个用逗号隔开
+            #zk_hosts: 192.168.199.208:32181
+            #配置给kafka存储consumer offsets的ZK Root Path
+            #zk_root: /pyleus/partition_LOGIN
+            #Kafka consumer ID
+            #consumer_id: LOGIN
+            #定义需要从某个offset开始吗
+            #默认为false
+            #from_start: false
+            #start_offset_time: 1511971200
+            #binary_data: true
+    #- spout:
+        #name: pay_spout
+        #type: kafka
+        #options:
+            #配置kafka的topic
+            #topic: PAY
+            #配置zookeeper地址，多个用逗号隔开
+            #zk_hosts: 192.168.199.208:32181
+            #配置给kafka存储consumer offsets的ZK Root Path
+            #zk_root: /pyleus/partition_pay
+            #Kafka consumer ID
+            #consumer_id: pay
+            #定义需要从某个offset开始吗
+            #默认为false
+            #from_start: false
+            #start_offset_time: 1511971200
+            #binary_data: true
+    #- spout:
+        #name: shortlink_spout
+        #type: kafka
+        #options:
+            #配置kafka的topic
+            #topic: SHORTLINK
+            #配置zookeeper地址，多个用逗号隔开
+            #zk_hosts: kafkaserver1:2181,kafkaserver2:2181,kafkaserver3:2181
+            #配置给kafka存储consumer offsets的ZK Root Path
+            #zk_root: /pyleus/partition_shortlink
+            #Kafka consumer ID
+            #consumer_id: shortlink
+            #定义需要从某个offset开始吗
+            #默认为false
+            #from_start: false
+            #start_offset_time: 1500187297
+            #binary_data: true
+    - spout:
+        name: haxypublic_spout
+        type: kafka
+        options:
+            #配置kafka的topic
+            topic: HAXYPUBLIC
+            #配置zookeeper地址，多个用逗号隔开
+            zk_hosts: 192.168.199.208:32181
+            #配置给kafka存储consumer offsets的ZK Root Path
+            zk_root: /pyleus/partition_haxypublic
+            #Kafka consumer ID
+            consumer_id: haxypublic
+            #定义需要从某个offset开始吗
+            #默认为false
+            from_start: false
+            #start_offset_time: 1500187297
+            binary_data: true
+    #- bolt:
+        #name: bolt_kafka_login
+        #module: niku_logbolt.bolt_kafka_login
+        #parallelism_hint: 3
+        #groupings:
+          #- shuffle_grouping: login_spout
+    #- bolt:
+        #name: bolt_kafka_pay
+        #module: niku_logbolt.bolt_kafka_pay
+        #parallelism_hint: 3
+        #groupings:
+          #- shuffle_grouping: pay_spout
+    #- bolt:
+        #name: bolt_kafka_shortlink
+        #module: niku_logbolt.bolt_kafka_shortlink
+        #parallelism_hint: 3
+        #groupings:
+          #- shuffle_grouping: shortlink_spout
+    - bolt:
+        name: bolt_kafka_haxypublic
+        module: niku_logbolt.bolt_kafka_haxypublic
+        groupings:
+          - global_grouping: haxypublic_spout

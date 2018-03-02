@@ -1,0 +1,438 @@
+2018-01-26 13:58:33,606[DEBUG][10858][140329590667008][15]kafka获取到的数据为:['2018-01-25 21:54:35|2|nk_pspg0en0z07g6wsdg8|2000399|\xe5\xa7\xac\xe7\x8e\x9b\xe4\xbd\xa9\xe5\xbe\xb7|4|D5BA8754-CA6F-408A-AEC9-592CCD94E2BE|554|1243|DeviceLogoutLog']
+2018-01-26 13:58:33,609[DEBUG][10858][140329590667008][23]开始deviceonline处理!!!!
+2018-01-26 13:58:33,613[DEBUG][10858][140329590667008][25]开始uuiddevice处理!!!!
+2018-01-26 13:58:33,613[DEBUG][10858][140329590667008][66]对应的key为:ROYAL:UUIDDEVICE:NIK-AHXY:all,filed为:nk_pspg0en0z07g6wsdg8
+2018-01-26 13:58:33,613[DEBUG][10858][140329590667008][68]当前value值为:None
+2018-01-26 13:58:33,613[DEBUG][10858][140329590667008][78]新的value值为:{"D5BA8754-CA6F-408A-AEC9-592CCD94E2BE": 1}
+2018-01-26 14:02:30,779[DEBUG][10858][140329590667008][15]kafka获取到的数据为:['2018-01-25 21:54:35|2|nk_pspg0en0z07g6wsdg8|2000399|\xe5\xa7\xac\xe7\x8e\x9b\xe4\xbd\xa9\xe5\xbe\xb7|4|D5BA8754-CA6F-408A-AEC9-592CCD94E2BE|554|1243|DeviceLogoutLog']
+2018-01-26 14:02:30,779[DEBUG][10858][140329590667008][23]开始deviceonline处理!!!!
+2018-01-26 14:02:30,780[DEBUG][10858][140329590667008][25]开始uuiddevice处理!!!!
+2018-01-26 14:02:30,780[DEBUG][10858][140329590667008][66]对应的key为:ROYAL:UUIDDEVICE:NIK-AHXY:all,filed为:nk_pspg0en0z07g6wsdg8
+2018-01-26 14:02:30,781[DEBUG][10858][140329590667008][68]当前value值为:{"D5BA8754-CA6F-408A-AEC9-592CCD94E2BE": 1}
+2018-01-26 14:02:30,781[DEBUG][10858][140329590667008][78]新的value值为:"1} {\"D5BA8754-CA6F-408A-AEC9-592CCD94E2BE\": D5BA8754-CA6F-408A-AEC9-592CCD94E2BE"
+2018-01-26 14:12:02,347[DEBUG][16130][139964422444800][15]kafka获取到的数据为:['2018-01-25 21:54:35|2|nk_pspg0en0z07g6wsdg8|2000399|\xe5\xa7\xac\xe7\x8e\x9b\xe4\xbd\xa9\xe5\xbe\xb7|4|D5BA8754-CA6F-408A-AEC9-592CCD94E2BE|554|1243|DeviceLogoutLog']
+2018-01-26 14:12:02,350[DEBUG][16130][139964422444800][23]开始deviceonline处理!!!!
+2018-01-26 14:12:02,354[DEBUG][16130][139964422444800][25]开始uuiddevice处理!!!!
+2018-01-26 14:12:02,354[DEBUG][16130][139964422444800][66]对应的key为:ROYAL:UUIDDEVICE:NIK-AHXY:all,filed为:nk_pspg0en0z07g6wsdg8
+2018-01-26 14:12:02,358[ERROR][16130][139964422444800][240]Exception in bolt.run
+Traceback (most recent call last):
+  File "/data/storm/supervisor/stormdist/niku_logbolt-223-1516947105/resources/pyleus_venv/lib/python2.7/site-packages/pyleus/storm/component.py", line 238, in run
+    self.run_component()
+  File "/data/storm/supervisor/stormdist/niku_logbolt-223-1516947105/resources/pyleus_venv/lib/python2.7/site-packages/pyleus/storm/bolt.py", line 49, in run_component
+    self._process_tuple(tup)
+  File "/data/storm/supervisor/stormdist/niku_logbolt-223-1516947105/resources/pyleus_venv/lib/python2.7/site-packages/pyleus/storm/bolt.py", line 175, in _process_tuple
+    self.process_tuple(tup)
+  File "/data/storm/supervisor/stormdist/niku_logbolt-223-1516947105/resources/niku_logbolt/bolt_kafka_haxypublic.py", line 26, in process_tuple
+    haxypublic_handle_logic_obj.uuiddevice()
+  File "module/haxypubliclogic.py", line 67, in uuiddevice
+    value = json.load(self.redis_obj.hget(key, userid))
+  File "/usr/lib/python2.7/json/__init__.py", line 287, in load
+    return loads(fp.read(),
+AttributeError: 'NoneType' object has no attribute 'read'
+2018-01-26 14:14:44,629[DEBUG][17276][139722466400000][15]kafka获取到的数据为:['2018-01-25 21:54:35|2|nk_pspg0en0z07g6wsdg8|2000399|\xe5\xa7\xac\xe7\x8e\x9b\xe4\xbd\xa9\xe5\xbe\xb7|4|D5BA8754-CA6F-408A-AEC9-592CCD94E2BE|554|1243|DeviceLogoutLog']
+2018-01-26 14:14:44,632[DEBUG][17276][139722466400000][23]开始deviceonline处理!!!!
+2018-01-26 14:14:44,636[DEBUG][17276][139722466400000][25]开始uuiddevice处理!!!!
+2018-01-26 14:14:44,637[DEBUG][17276][139722466400000][66]对应的key为:ROYAL:UUIDDEVICE:NIK-AHXY:all,filed为:nk_pspg0en0z07g6wsdg8
+2018-01-26 14:14:44,638[DEBUG][17276][139722466400000][68]当前value值为:None
+2018-01-26 14:14:44,638[DEBUG][17276][139722466400000][80]新的value值为:{"D5BA8754-CA6F-408A-AEC9-592CCD94E2BE": 1}
+2018-01-26 14:14:49,885[DEBUG][17276][139722466400000][15]kafka获取到的数据为:['2018-01-25 21:54:35|2|nk_pspg0en0z07g6wsdg8|2000399|\xe5\xa7\xac\xe7\x8e\x9b\xe4\xbd\xa9\xe5\xbe\xb7|4|D5BA8754-CA6F-408A-AEC9-592CCD94E2BE|554|1243|DeviceLogoutLog']
+2018-01-26 14:14:49,885[DEBUG][17276][139722466400000][23]开始deviceonline处理!!!!
+2018-01-26 14:14:49,887[DEBUG][17276][139722466400000][25]开始uuiddevice处理!!!!
+2018-01-26 14:14:49,887[DEBUG][17276][139722466400000][66]对应的key为:ROYAL:UUIDDEVICE:NIK-AHXY:all,filed为:nk_pspg0en0z07g6wsdg8
+2018-01-26 14:14:49,887[DEBUG][17276][139722466400000][68]当前value值为:{"D5BA8754-CA6F-408A-AEC9-592CCD94E2BE": 1}
+2018-01-26 14:14:49,887[DEBUG][17276][139722466400000][73]<type 'str'>
+2018-01-26 14:14:49,887[ERROR][17276][139722466400000][240]Exception in bolt.run
+Traceback (most recent call last):
+  File "/data/storm/supervisor/stormdist/niku_logbolt-224-1516947277/resources/pyleus_venv/lib/python2.7/site-packages/pyleus/storm/component.py", line 238, in run
+    self.run_component()
+  File "/data/storm/supervisor/stormdist/niku_logbolt-224-1516947277/resources/pyleus_venv/lib/python2.7/site-packages/pyleus/storm/bolt.py", line 49, in run_component
+    self._process_tuple(tup)
+  File "/data/storm/supervisor/stormdist/niku_logbolt-224-1516947277/resources/pyleus_venv/lib/python2.7/site-packages/pyleus/storm/bolt.py", line 175, in _process_tuple
+    self.process_tuple(tup)
+  File "/data/storm/supervisor/stormdist/niku_logbolt-224-1516947277/resources/niku_logbolt/bolt_kafka_haxypublic.py", line 26, in process_tuple
+    haxypublic_handle_logic_obj.uuiddevice()
+  File "module/haxypubliclogic.py", line 74, in uuiddevice
+    if value.has_key(equipmentid):
+AttributeError: 'str' object has no attribute 'has_key'
+2018-01-26 14:16:53,709[DEBUG][17925][140504456730368][15]kafka获取到的数据为:['2018-01-25 21:54:35|2|nk_pspg0en0z07g6wsdg8|2000399|\xe5\xa7\xac\xe7\x8e\x9b\xe4\xbd\xa9\xe5\xbe\xb7|4|D5BA8754-CA6F-408A-AEC9-592CCD94E2BE|554|1243|DeviceLogoutLog']
+2018-01-26 14:16:53,712[DEBUG][17925][140504456730368][23]开始deviceonline处理!!!!
+2018-01-26 14:16:53,716[DEBUG][17925][140504456730368][25]开始uuiddevice处理!!!!
+2018-01-26 14:16:53,716[DEBUG][17925][140504456730368][66]对应的key为:ROYAL:UUIDDEVICE:NIK-AHXY:all,filed为:nk_pspg0en0z07g6wsdg8
+2018-01-26 14:16:53,716[DEBUG][17925][140504456730368][68]当前value值为:{"D5BA8754-CA6F-408A-AEC9-592CCD94E2BE": 1}
+2018-01-26 14:16:53,718[DEBUG][17925][140504456730368][74]<type 'dict'>
+2018-01-26 14:16:53,718[DEBUG][17925][140504456730368][81]新的value值为:{}
+2018-01-26 14:16:57,238[DEBUG][17925][140504456730368][15]kafka获取到的数据为:['2018-01-25 21:54:35|2|nk_pspg0en0z07g6wsdg8|2000399|\xe5\xa7\xac\xe7\x8e\x9b\xe4\xbd\xa9\xe5\xbe\xb7|4|D5BA8754-CA6F-408A-AEC9-592CCD94E2BE|554|1243|DeviceLogoutLog']
+2018-01-26 14:16:57,238[DEBUG][17925][140504456730368][23]开始deviceonline处理!!!!
+2018-01-26 14:16:57,239[DEBUG][17925][140504456730368][25]开始uuiddevice处理!!!!
+2018-01-26 14:16:57,240[DEBUG][17925][140504456730368][66]对应的key为:ROYAL:UUIDDEVICE:NIK-AHXY:all,filed为:nk_pspg0en0z07g6wsdg8
+2018-01-26 14:16:57,240[DEBUG][17925][140504456730368][68]当前value值为:{}
+2018-01-26 14:16:57,240[DEBUG][17925][140504456730368][74]<type 'dict'>
+2018-01-26 14:16:57,240[DEBUG][17925][140504456730368][81]新的value值为:{"D5BA8754-CA6F-408A-AEC9-592CCD94E2BE": 1}
+2018-01-26 14:17:58,304[DEBUG][17925][140504456730368][15]kafka获取到的数据为:['2018-01-25 21:54:35|2|nk_pspg0en0z07g6wsdg8|2000399|\xe5\xa7\xac\xe7\x8e\x9b\xe4\xbd\xa9\xe5\xbe\xb7|4|D5BA8754-CA6F-408A-AEC9-592CCD94E2BE|554|1243|DeviceLogoutLog']
+2018-01-26 14:17:58,305[DEBUG][17925][140504456730368][23]开始deviceonline处理!!!!
+2018-01-26 14:17:58,306[DEBUG][17925][140504456730368][25]开始uuiddevice处理!!!!
+2018-01-26 14:17:58,307[DEBUG][17925][140504456730368][66]对应的key为:ROYAL:UUIDDEVICE:NIK-AHXY:all,filed为:nk_pspg0en0z07g6wsdg8
+2018-01-26 14:17:58,307[DEBUG][17925][140504456730368][68]当前value值为:None
+2018-01-26 14:17:58,307[DEBUG][17925][140504456730368][81]新的value值为:{"D5BA8754-CA6F-408A-AEC9-592CCD94E2BE": 1}
+2018-01-26 14:18:13,951[DEBUG][17925][140504456730368][15]kafka获取到的数据为:['2018-01-25 21:54:35|2|nk_pspg0en0z07g6wsdg8|2000399|\xe5\xa7\xac\xe7\x8e\x9b\xe4\xbd\xa9\xe5\xbe\xb7|4|D5BA8754-CA6F-408A-AEC9-592CCD94E2BE|554|1243|DeviceLogoutLog']
+2018-01-26 14:18:13,951[DEBUG][17925][140504456730368][23]开始deviceonline处理!!!!
+2018-01-26 14:18:13,952[DEBUG][17925][140504456730368][25]开始uuiddevice处理!!!!
+2018-01-26 14:18:13,952[DEBUG][17925][140504456730368][66]对应的key为:ROYAL:UUIDDEVICE:NIK-AHXY:all,filed为:nk_pspg0en0z07g6wsdg8
+2018-01-26 14:18:13,952[DEBUG][17925][140504456730368][68]当前value值为:{"D5BA8754-CA6F-408A-AEC9-592CCD94E2BE": 1}
+2018-01-26 14:18:13,953[DEBUG][17925][140504456730368][74]<type 'dict'>
+2018-01-26 14:18:13,953[DEBUG][17925][140504456730368][81]新的value值为:{}
+2018-01-26 14:23:53,485[DEBUG][19546][140156732053248][15]kafka获取到的数据为:['2018-01-25 21:54:35|2|nk_pspg0en0z07g6wsdg8|2000399|\xe5\xa7\xac\xe7\x8e\x9b\xe4\xbd\xa9\xe5\xbe\xb7|4|D5BA8754-CA6F-408A-AEC9-592CCD94E2BE|554|1243|DeviceLogoutLog']
+2018-01-26 14:23:53,489[DEBUG][19546][140156732053248][23]开始deviceonline处理!!!!
+2018-01-26 14:23:53,493[DEBUG][19546][140156732053248][25]开始uuiddevice处理!!!!
+2018-01-26 14:23:53,493[DEBUG][19546][140156732053248][66]对应的key为:ROYAL:UUIDDEVICE:NIK-AHXY:all,filed为:nk_pspg0en0z07g6wsdg8
+2018-01-26 14:23:53,494[DEBUG][19546][140156732053248][68]当前value值为:{}
+2018-01-26 14:23:53,497[DEBUG][19546][140156732053248][74]<type 'dict'>
+2018-01-26 14:23:53,497[DEBUG][19546][140156732053248][80]{'D5BA8754-CA6F-408A-AEC9-592CCD94E2BE': 1}
+2018-01-26 14:23:53,498[DEBUG][19546][140156732053248][82]新的value值为:{"D5BA8754-CA6F-408A-AEC9-592CCD94E2BE": 1}
+2018-01-26 14:24:56,611[DEBUG][19546][140156732053248][15]kafka获取到的数据为:['>2018-01-25 21:54:35|2|nk_pspg0en0z07g6wsdg8|2000399|\xe5\xa7\xac\xe7\x8e\x9b\xe4\xbd\xa9\xe5\xbe\xb7|4|D5BA8754-CA6F-408A-AEC9-592CCD94E2BE|554|1243|DeviceLogoutLog']
+2018-01-26 14:24:56,612[ERROR][19546][140156732053248][240]Exception in bolt.run
+Traceback (most recent call last):
+  File "/data/storm/supervisor/stormdist/niku_logbolt-226-1516947818/resources/pyleus_venv/lib/python2.7/site-packages/pyleus/storm/component.py", line 238, in run
+    self.run_component()
+  File "/data/storm/supervisor/stormdist/niku_logbolt-226-1516947818/resources/pyleus_venv/lib/python2.7/site-packages/pyleus/storm/bolt.py", line 49, in run_component
+    self._process_tuple(tup)
+  File "/data/storm/supervisor/stormdist/niku_logbolt-226-1516947818/resources/pyleus_venv/lib/python2.7/site-packages/pyleus/storm/bolt.py", line 175, in _process_tuple
+    self.process_tuple(tup)
+  File "/data/storm/supervisor/stormdist/niku_logbolt-226-1516947818/resources/niku_logbolt/bolt_kafka_haxypublic.py", line 16, in process_tuple
+    haxypublic_handle_logic_obj = HaxypublicLogic(value)
+  File "module/haxypubliclogic.py", line 31, in __init__
+    super(HaxypublicLogic, self).__init__()
+  File "module/handlelogic_haxy.py", line 16, in __init__
+    self.handle_key_obj = HandleKey(self.tup_value, self.timefield)
+  File "key/handlekey_haxy.py", line 6, in __init__
+    self.timestamp_list = self.timestamp_list_solt(timefieldname)
+  File "key/handlekey_haxy.py", line 24, in timestamp_list_solt
+    timestamp_list = self.timestamp_list_format(timestamp_format_list, timefieldname)
+  File "key/handlekey_haxy.py", line 12, in timestamp_list_format
+    time_struct = time.strptime(timestamp, '%Y-%m-%d %H:%M:%S')
+  File "/usr/lib/python2.7/_strptime.py", line 478, in _strptime_time
+    return _strptime(data_string, format)[0]
+  File "/usr/lib/python2.7/_strptime.py", line 332, in _strptime
+    (data_string, format))
+ValueError: time data '>2018-01-25 21:54:35' does not match format '%Y-%m-%d %H:%M:%S'
+2018-01-26 14:28:44,251[DEBUG][20869][140462094370560][15]kafka获取到的数据为:['>2018-01-25 21:54:35|2|nk_pspg0en0z07g6wsdg8|2000399|\xe5\xa7\xac\xe7\x8e\x9b\xe4\xbd\xa9\xe5\xbe\xb7|4|D5BA8754-CA6F-408A-AEC9-592CCD94E2BE|554|1243|DeviceLogoutLog']
+2018-01-26 14:28:44,265[DEBUG][20869][140462094370560][15]kafka获取到的数据为:['2018-01-25 21:54:35|2|nk_pspg0en0z07g6wsdg8|2000399|\xe5\xa7\xac\xe7\x8e\x9b\xe4\xbd\xa9\xe5\xbe\xb7|4|D5BA8754-CA6F-408A-AEC9-592CCD94E2BE|554|1243|DeviceLogoutLog']
+2018-01-26 14:28:44,266[DEBUG][20869][140462094370560][26]开始deviceonline处理!!!!
+2018-01-26 14:28:44,273[DEBUG][20869][140462094370560][28]开始uuiddevice处理!!!!
+2018-01-26 14:28:44,277[DEBUG][20869][140462094370560][66]对应的key为:ROYAL:UUIDDEVICE:NIK-AHXY:all,filed为:nk_pspg0en0z07g6wsdg8
+2018-01-26 14:28:44,278[DEBUG][20869][140462094370560][68]当前value值为:{"D5BA8754-CA6F-408A-AEC9-592CCD94E2BE": 1}
+2018-01-26 14:28:44,279[DEBUG][20869][140462094370560][74]<type 'dict'>
+2018-01-26 14:28:44,279[DEBUG][20869][140462094370560][82]新的value值为:{}
+2018-01-26 14:41:43,679[DEBUG][23704][139636807272192][15]kafka获取到的数据为:['2018-01-25 21:54:35|2|nk_pspg0en0z07g6wsdg8|2000399|\xe5\xa7\xac\xe7\x8e\x9b\xe4\xbd\xa9\xe5\xbe\xb7|4|D5BA8754-CA6F-408A-AEC9-592CCD94E2BE|554|1243|DeviceLogoutLog']
+2018-01-26 14:41:43,682[DEBUG][23704][139636807272192][26]开始deviceonline处理!!!!
+2018-01-26 14:41:43,685[DEBUG][23704][139636807272192][28]开始uuiddevice处理!!!!
+2018-01-26 14:41:43,685[DEBUG][23704][139636807272192][66]对应的key为:ROYAL:UUIDDEVICE:NIK-AHXY:all,filed为:nk_pspg0en0z07g6wsdg8
+2018-01-26 14:41:43,686[DEBUG][23704][139636807272192][68]当前value值为:{}
+2018-01-26 14:41:43,686[DEBUG][23704][139636807272192][74]<type 'dict'>
+2018-01-26 14:41:43,686[DEBUG][23704][139636807272192][81]{'D5BA8754-CA6F-408A-AEC9-592CCD94E2BE': 1}
+2018-01-26 14:41:43,686[DEBUG][23704][139636807272192][83]新的value值为:{"D5BA8754-CA6F-408A-AEC9-592CCD94E2BE": 1}
+2018-01-26 14:42:17,992[DEBUG][23704][139636807272192][15]kafka获取到的数据为:['2018-01-25 21:54:35|2|nk_pspg0en0z07g6wsdg8|2000399|\xe5\xa7\xac\xe7\x8e\x9b\xe4\xbd\xa9\xe5\xbe\xb7|4|D5BA8754-CA6F-408A-AEC9-592CCD94E2BE|554|1243|DeviceLogoutLog']
+2018-01-26 14:42:17,992[DEBUG][23704][139636807272192][26]开始deviceonline处理!!!!
+2018-01-26 14:42:17,994[DEBUG][23704][139636807272192][28]开始uuiddevice处理!!!!
+2018-01-26 14:42:17,994[DEBUG][23704][139636807272192][66]对应的key为:ROYAL:UUIDDEVICE:NIK-AHXY:all,filed为:nk_pspg0en0z07g6wsdg8
+2018-01-26 14:42:17,994[DEBUG][23704][139636807272192][68]当前value值为:{"D5BA8754-CA6F-408A-AEC9-592CCD94E2BE": 1}
+2018-01-26 14:42:17,994[DEBUG][23704][139636807272192][74]<type 'dict'>
+2018-01-26 14:42:17,994[DEBUG][23704][139636807272192][76]1
+2018-01-26 14:42:17,994[DEBUG][23704][139636807272192][83]新的value值为:{}
+2018-01-26 14:44:38,755[DEBUG][24478][140664833115904][15]kafka获取到的数据为:['2018-01-25 21:54:35|2|nk_pspg0en0z07g6wsdg8|2000399|\xe5\xa7\xac\xe7\x8e\x9b\xe4\xbd\xa9\xe5\xbe\xb7|4|D5BA8754-CA6F-408A-AEC9-592CCD94E2BE|554|1243|DeviceLogoutLog']
+2018-01-26 14:44:38,757[DEBUG][24478][140664833115904][26]开始deviceonline处理!!!!
+2018-01-26 14:44:38,761[DEBUG][24478][140664833115904][28]开始uuiddevice处理!!!!
+2018-01-26 14:44:38,761[DEBUG][24478][140664833115904][66]对应的key为:ROYAL:UUIDDEVICE:NIK-AHXY:all,filed为:nk_pspg0en0z07g6wsdg8
+2018-01-26 14:44:38,761[DEBUG][24478][140664833115904][68]当前value值为:{}
+2018-01-26 14:44:38,762[DEBUG][24478][140664833115904][81]新的value值为:{"D5BA8754-CA6F-408A-AEC9-592CCD94E2BE": 1}
+2018-01-26 14:45:03,244[DEBUG][24478][140664833115904][15]kafka获取到的数据为:['2018-01-25 21:54:35|2|nk_pspg0en0z07g6wsdg8|2000399|\xe5\xa7\xac\xe7\x8e\x9b\xe4\xbd\xa9\xe5\xbe\xb7|4|D5BA8754-CA6F-408A-AEC9-592CCD94E2BE|554|1243|DeviceLogoutLog']
+2018-01-26 14:45:03,244[DEBUG][24478][140664833115904][26]开始deviceonline处理!!!!
+2018-01-26 14:45:03,249[DEBUG][24478][140664833115904][28]开始uuiddevice处理!!!!
+2018-01-26 14:45:03,249[DEBUG][24478][140664833115904][66]对应的key为:ROYAL:UUIDDEVICE:NIK-AHXY:all,filed为:nk_pspg0en0z07g6wsdg8
+2018-01-26 14:45:03,250[DEBUG][24478][140664833115904][68]当前value值为:{"D5BA8754-CA6F-408A-AEC9-592CCD94E2BE": 1}
+2018-01-26 14:45:03,250[DEBUG][24478][140664833115904][81]新的value值为:{"D5BA8754-CA6F-408A-AEC9-592CCD94E2BE": 2}
+2018-01-26 14:46:09,308[DEBUG][24478][140664833115904][15]kafka获取到的数据为:['2018-01-25 21:54:35|2|nk_pspg0en0z07g6wsdg8|2000399|\xe5\xa7\xac\xe7\x8e\x9b\xe4\xbd\xa9\xe5\xbe\xb7|4|D5BA8754-CA6F-408A-AEC9-592CCD94E2BB|554|1243|DeviceLogoutLog']
+2018-01-26 14:46:09,309[DEBUG][24478][140664833115904][26]开始deviceonline处理!!!!
+2018-01-26 14:46:09,310[DEBUG][24478][140664833115904][28]开始uuiddevice处理!!!!
+2018-01-26 14:46:09,310[DEBUG][24478][140664833115904][66]对应的key为:ROYAL:UUIDDEVICE:NIK-AHXY:all,filed为:nk_pspg0en0z07g6wsdg8
+2018-01-26 14:46:09,310[DEBUG][24478][140664833115904][68]当前value值为:{"D5BA8754-CA6F-408A-AEC9-592CCD94E2BE": 2}
+2018-01-26 14:46:09,310[DEBUG][24478][140664833115904][81]新的value值为:{"D5BA8754-CA6F-408A-AEC9-592CCD94E2BB": 1, "D5BA8754-CA6F-408A-AEC9-592CCD94E2BE": 2}
+2018-01-26 14:46:25,363[DEBUG][24478][140664833115904][15]kafka获取到的数据为:['2018-01-25 21:54:35|2|nk_pspg0en0z07g6wsdg8|2000399|\xe5\xa7\xac\xe7\x8e\x9b\xe4\xbd\xa9\xe5\xbe\xb7|4|D5BA8754-CA6F-408A-AEC9-592CCD94E2BB|554|1243|DeviceLogoutLog']
+2018-01-26 14:46:25,363[DEBUG][24478][140664833115904][26]开始deviceonline处理!!!!
+2018-01-26 14:46:25,368[DEBUG][24478][140664833115904][28]开始uuiddevice处理!!!!
+2018-01-26 14:46:25,368[DEBUG][24478][140664833115904][66]对应的key为:ROYAL:UUIDDEVICE:NIK-AHXY:all,filed为:nk_pspg0en0z07g6wsdg8
+2018-01-26 14:46:25,369[DEBUG][24478][140664833115904][68]当前value值为:{"D5BA8754-CA6F-408A-AEC9-592CCD94E2BB": 1, "D5BA8754-CA6F-408A-AEC9-592CCD94E2BE": 2}
+2018-01-26 14:46:25,369[DEBUG][24478][140664833115904][81]新的value值为:{"D5BA8754-CA6F-408A-AEC9-592CCD94E2BB": 2, "D5BA8754-CA6F-408A-AEC9-592CCD94E2BE": 2}
+2018-01-26 14:46:41,770[DEBUG][24478][140664833115904][15]kafka获取到的数据为:['2018-01-25 21:54:35|2|nk_pspg0en0z07g6wsdg8|2000399|\xe5\xa7\xac\xe7\x8e\x9b\xe4\xbd\xa9\xe5\xbe\xb7|4|D5BA8754-CA6F-408A-AEC9-592CCD94E2BC|554|1243|DeviceLogoutLog']
+2018-01-26 14:46:41,771[DEBUG][24478][140664833115904][26]开始deviceonline处理!!!!
+2018-01-26 14:46:41,772[DEBUG][24478][140664833115904][28]开始uuiddevice处理!!!!
+2018-01-26 14:46:41,772[DEBUG][24478][140664833115904][66]对应的key为:ROYAL:UUIDDEVICE:NIK-AHXY:all,filed为:nk_pspg0en0z07g6wsdg8
+2018-01-26 14:46:41,772[DEBUG][24478][140664833115904][68]当前value值为:{"D5BA8754-CA6F-408A-AEC9-592CCD94E2BB": 2, "D5BA8754-CA6F-408A-AEC9-592CCD94E2BE": 2}
+2018-01-26 14:46:41,773[DEBUG][24478][140664833115904][81]新的value值为:{"D5BA8754-CA6F-408A-AEC9-592CCD94E2BC": 1, "D5BA8754-CA6F-408A-AEC9-592CCD94E2BB": 2, "D5BA8754-CA6F-408A-AEC9-592CCD94E2BE": 2}
+2018-01-26 14:48:53,906[DEBUG][24478][140664833115904][15]kafka获取到的数据为:['2018-01-25 21:54:35|2|nk_pspg0en0z07g6wsdg9|2000399|\xe5\xa7\xac\xe7\x8e\x9b\xe4\xbd\xa9\xe5\xbe\xb7|4|D5BA8754-CA6F-408A-AEC9-592CCD94E2BF|554|1243|DeviceLogoutLog']
+2018-01-26 14:48:53,906[DEBUG][24478][140664833115904][26]开始deviceonline处理!!!!
+2018-01-26 14:48:53,908[DEBUG][24478][140664833115904][28]开始uuiddevice处理!!!!
+2018-01-26 14:48:53,908[DEBUG][24478][140664833115904][66]对应的key为:ROYAL:UUIDDEVICE:NIK-AHXY:all,filed为:nk_pspg0en0z07g6wsdg9
+2018-01-26 14:48:53,909[DEBUG][24478][140664833115904][68]当前value值为:None
+2018-01-26 14:48:53,909[DEBUG][24478][140664833115904][81]新的value值为:{"D5BA8754-CA6F-408A-AEC9-592CCD94E2BF": 1}
+2018-01-26 16:03:16,433[DEBUG][8721][140068990371584][15]kafka获取到的数据为:['2018-01-25 21:54:35|2|nk_pspg0en0z07g6wsdg9|2000399|\xe5\xa7\xac\xe7\x8e\x9b\xe4\xbd\xa9\xe5\xbe\xb7|4|D5BA8754-CA6F-408A-AEC9-592CCD94E2BF|554|1243|DeviceLogoutLog']
+2018-01-26 16:03:16,435[DEBUG][8721][140068990371584][26]开始deviceonline处理!!!!
+2018-01-26 16:03:16,436[DEBUG][8721][140068990371584][53]对应的key为:ROYAL:DEVICEONLINE:NIK-AHXY:all,filed为:['D5BA8754-CA6F-408A-AEC9-592CCD94E2BF']
+2018-01-26 16:03:16,446[DEBUG][8721][140068990371584][55]当前value值为:None
+2018-01-26 16:03:16,446[DEBUG][8721][140068990371584][68]新的value值为:{"nk_pspg0en0z07g6wsdg9": "1243"}
+2018-01-26 16:03:16,447[DEBUG][8721][140068990371584][28]开始uuiddevice处理!!!!
+2018-01-26 16:03:16,447[DEBUG][8721][140068990371584][83]对应的key为:ROYAL:UUIDDEVICE:NIK-AHXY:all,filed为:nk_pspg0en0z07g6wsdg9
+2018-01-26 16:03:16,449[DEBUG][8721][140068990371584][85]当前value值为:{"D5BA8754-CA6F-408A-AEC9-592CCD94E2BF": 1}
+2018-01-26 16:03:16,449[DEBUG][8721][140068990371584][98]新的value值为:{"D5BA8754-CA6F-408A-AEC9-592CCD94E2BF": 2}
+2018-01-26 16:04:56,873[DEBUG][8721][140068990371584][15]kafka获取到的数据为:['2018-01-25 21:54:35|2|nk_pspg0en0z07g6wsdg9|2000399|\xe5\xa7\xac\xe7\x8e\x9b\xe4\xbd\xa9\xe5\xbe\xb7|4|D5BA8754-CA6F-408A-AEC9-592CCD94E2BF|554|1243|DeviceLogoutLog']
+2018-01-26 16:04:56,874[DEBUG][8721][140068990371584][26]开始deviceonline处理!!!!
+2018-01-26 16:04:56,874[DEBUG][8721][140068990371584][53]对应的key为:ROYAL:DEVICEONLINE:NIK-AHXY:all,filed为:['D5BA8754-CA6F-408A-AEC9-592CCD94E2BF']
+2018-01-26 16:04:56,874[DEBUG][8721][140068990371584][55]当前value值为:{"nk_pspg0en0z07g6wsdg9": "1243"}
+2018-01-26 16:04:56,874[DEBUG][8721][140068990371584][68]新的value值为:{"nk_pspg0en0z07g6wsdg9": "12431243"}
+2018-01-26 16:04:56,875[DEBUG][8721][140068990371584][28]开始uuiddevice处理!!!!
+2018-01-26 16:04:56,875[DEBUG][8721][140068990371584][83]对应的key为:ROYAL:UUIDDEVICE:NIK-AHXY:all,filed为:nk_pspg0en0z07g6wsdg9
+2018-01-26 16:04:56,875[DEBUG][8721][140068990371584][85]当前value值为:{"D5BA8754-CA6F-408A-AEC9-592CCD94E2BF": 2}
+2018-01-26 16:04:56,875[DEBUG][8721][140068990371584][98]新的value值为:{"D5BA8754-CA6F-408A-AEC9-592CCD94E2BF": 3}
+2018-01-26 16:11:19,120[DEBUG][10764][140114789820160][15]kafka获取到的数据为:['2018-01-25 21:54:35|2|nk_pspg0en0z07g6wsdg9|2000399|\xe5\xa7\xac\xe7\x8e\x9b\xe4\xbd\xa9\xe5\xbe\xb7|4|D5BA8754-CA6F-408A-AEC9-592CCD94E2BF|554|1243|DeviceLogoutLog']
+2018-01-26 16:11:19,123[DEBUG][10764][140114789820160][26]开始deviceonline处理!!!!
+2018-01-26 16:11:19,123[DEBUG][10764][140114789820160][53]对应的key为:ROYAL:DEVICEONLINE:NIK-AHXY:all,filed为:D5BA8754-CA6F-408A-AEC9-592CCD94E2BF
+2018-01-26 16:11:19,125[DEBUG][10764][140114789820160][55]当前value值为:1243
+2018-01-26 16:11:19,125[ERROR][10764][140114789820160][240]Exception in bolt.run
+Traceback (most recent call last):
+  File "/data/storm/supervisor/stormdist/niku_logbolt-231-1516954264/resources/pyleus_venv/lib/python2.7/site-packages/pyleus/storm/component.py", line 238, in run
+    self.run_component()
+  File "/data/storm/supervisor/stormdist/niku_logbolt-231-1516954264/resources/pyleus_venv/lib/python2.7/site-packages/pyleus/storm/bolt.py", line 49, in run_component
+    self._process_tuple(tup)
+  File "/data/storm/supervisor/stormdist/niku_logbolt-231-1516954264/resources/pyleus_venv/lib/python2.7/site-packages/pyleus/storm/bolt.py", line 175, in _process_tuple
+    self.process_tuple(tup)
+  File "/data/storm/supervisor/stormdist/niku_logbolt-231-1516954264/resources/niku_logbolt/bolt_kafka_haxypublic.py", line 27, in process_tuple
+    haxypublic_handle_logic_obj.deviceonline()
+  File "module/haxypubliclogic.py", line 61, in deviceonline
+    if value.has_key(userid):
+AttributeError: 'int' object has no attribute 'has_key'
+2018-01-26 16:16:15,262[DEBUG][12011][140486580385536][15]kafka获取到的数据为:['2018-01-25 21:54:35|2|nk_pspg0en0z07g6wsdg9|2000399|\xe5\xa7\xac\xe7\x8e\x9b\xe4\xbd\xa9\xe5\xbe\xb7|4|D5BA8754-CA6F-408A-AEC9-592CCD94E2BF|554|1243|DeviceLogoutLog']
+2018-01-26 16:16:15,265[DEBUG][12011][140486580385536][26]开始deviceonline处理!!!!
+2018-01-26 16:16:15,265[DEBUG][12011][140486580385536][53]对应的key为:ROYAL:DEVICEONLINE:NIK-AHXY:all,filed为:D5BA8754-CA6F-408A-AEC9-592CCD94E2BF
+2018-01-26 16:16:15,269[DEBUG][12011][140486580385536][55]当前value值为:None
+2018-01-26 16:16:15,269[DEBUG][12011][140486580385536][68]新的value值为:{"nk_pspg0en0z07g6wsdg9": 1243}
+2018-01-26 16:16:15,270[DEBUG][12011][140486580385536][28]开始uuiddevice处理!!!!
+2018-01-26 16:16:15,270[DEBUG][12011][140486580385536][83]对应的key为:ROYAL:UUIDDEVICE:NIK-AHXY:all,filed为:nk_pspg0en0z07g6wsdg9
+2018-01-26 16:16:15,271[DEBUG][12011][140486580385536][85]当前value值为:{"D5BA8754-CA6F-408A-AEC9-592CCD94E2BF": 3}
+2018-01-26 16:16:15,271[DEBUG][12011][140486580385536][98]新的value值为:{"D5BA8754-CA6F-408A-AEC9-592CCD94E2BF": 4}
+2018-01-26 16:16:43,502[DEBUG][12011][140486580385536][15]kafka获取到的数据为:['2018-01-25 21:54:35|2|nk_pspg0en0z07g6wsdg9|2000399|\xe5\xa7\xac\xe7\x8e\x9b\xe4\xbd\xa9\xe5\xbe\xb7|4|D5BA8754-CA6F-408A-AEC9-592CCD94E2BF|554|1243|DeviceLogoutLog']
+2018-01-26 16:16:43,503[DEBUG][12011][140486580385536][26]开始deviceonline处理!!!!
+2018-01-26 16:16:43,503[DEBUG][12011][140486580385536][53]对应的key为:ROYAL:DEVICEONLINE:NIK-AHXY:all,filed为:D5BA8754-CA6F-408A-AEC9-592CCD94E2BF
+2018-01-26 16:16:43,505[DEBUG][12011][140486580385536][55]当前value值为:{"nk_pspg0en0z07g6wsdg9": 1243}
+2018-01-26 16:16:43,505[ERROR][12011][140486580385536][240]Exception in bolt.run
+Traceback (most recent call last):
+  File "/data/storm/supervisor/stormdist/niku_logbolt-232-1516954569/resources/pyleus_venv/lib/python2.7/site-packages/pyleus/storm/component.py", line 238, in run
+    self.run_component()
+  File "/data/storm/supervisor/stormdist/niku_logbolt-232-1516954569/resources/pyleus_venv/lib/python2.7/site-packages/pyleus/storm/bolt.py", line 49, in run_component
+    self._process_tuple(tup)
+  File "/data/storm/supervisor/stormdist/niku_logbolt-232-1516954569/resources/pyleus_venv/lib/python2.7/site-packages/pyleus/storm/bolt.py", line 175, in _process_tuple
+    self.process_tuple(tup)
+  File "/data/storm/supervisor/stormdist/niku_logbolt-232-1516954569/resources/niku_logbolt/bolt_kafka_haxypublic.py", line 27, in process_tuple
+    haxypublic_handle_logic_obj.deviceonline()
+  File "module/haxypubliclogic.py", line 62, in deviceonline
+    value[userid] = value[userid] + onlinesecond
+TypeError: unsupported operand type(s) for +: 'int' and 'str'
+2018-01-26 16:18:34,420[DEBUG][12662][140188511500032][15]kafka获取到的数据为:['2018-01-25 21:54:35|2|nk_pspg0en0z07g6wsdg9|2000399|\xe5\xa7\xac\xe7\x8e\x9b\xe4\xbd\xa9\xe5\xbe\xb7|4|D5BA8754-CA6F-408A-AEC9-592CCD94E2BF|554|1243|DeviceLogoutLog']
+2018-01-26 16:18:34,422[DEBUG][12662][140188511500032][26]开始deviceonline处理!!!!
+2018-01-26 16:18:34,422[DEBUG][12662][140188511500032][53]对应的key为:ROYAL:DEVICEONLINE:NIK-AHXY:all,filed为:D5BA8754-CA6F-408A-AEC9-592CCD94E2BF
+2018-01-26 16:18:34,425[DEBUG][12662][140188511500032][55]当前value值为:{"nk_pspg0en0z07g6wsdg9": 1243}
+2018-01-26 16:18:34,425[DEBUG][12662][140188511500032][68]新的value值为:{"nk_pspg0en0z07g6wsdg9": 2486}
+2018-01-26 16:18:34,425[DEBUG][12662][140188511500032][28]开始uuiddevice处理!!!!
+2018-01-26 16:18:34,425[DEBUG][12662][140188511500032][83]对应的key为:ROYAL:UUIDDEVICE:NIK-AHXY:all,filed为:nk_pspg0en0z07g6wsdg9
+2018-01-26 16:18:34,426[DEBUG][12662][140188511500032][85]当前value值为:{"D5BA8754-CA6F-408A-AEC9-592CCD94E2BF": 4}
+2018-01-26 16:18:34,426[DEBUG][12662][140188511500032][98]新的value值为:{"D5BA8754-CA6F-408A-AEC9-592CCD94E2BF": 5}
+2018-01-26 16:18:39,902[DEBUG][12662][140188511500032][15]kafka获取到的数据为:['2018-01-25 21:54:35|2|nk_pspg0en0z07g6wsdg9|2000399|\xe5\xa7\xac\xe7\x8e\x9b\xe4\xbd\xa9\xe5\xbe\xb7|4|D5BA8754-CA6F-408A-AEC9-592CCD94E2BF|554|1243|DeviceLogoutLog']
+2018-01-26 16:18:39,903[DEBUG][12662][140188511500032][26]开始deviceonline处理!!!!
+2018-01-26 16:18:39,903[DEBUG][12662][140188511500032][53]对应的key为:ROYAL:DEVICEONLINE:NIK-AHXY:all,filed为:D5BA8754-CA6F-408A-AEC9-592CCD94E2BF
+2018-01-26 16:18:39,903[DEBUG][12662][140188511500032][55]当前value值为:{"nk_pspg0en0z07g6wsdg9": 2486}
+2018-01-26 16:18:39,904[DEBUG][12662][140188511500032][68]新的value值为:{"nk_pspg0en0z07g6wsdg9": 3729}
+2018-01-26 16:18:39,904[DEBUG][12662][140188511500032][28]开始uuiddevice处理!!!!
+2018-01-26 16:18:39,904[DEBUG][12662][140188511500032][83]对应的key为:ROYAL:UUIDDEVICE:NIK-AHXY:all,filed为:nk_pspg0en0z07g6wsdg9
+2018-01-26 16:18:39,905[DEBUG][12662][140188511500032][85]当前value值为:{"D5BA8754-CA6F-408A-AEC9-592CCD94E2BF": 5}
+2018-01-26 16:18:39,905[DEBUG][12662][140188511500032][98]新的value值为:{"D5BA8754-CA6F-408A-AEC9-592CCD94E2BF": 6}
+2018-01-26 16:18:54,336[DEBUG][12662][140188511500032][15]kafka获取到的数据为:['2018-01-25 21:54:35|2|nk_pspg0en0z07g6wsdg9|2000399|\xe5\xa7\xac\xe7\x8e\x9b\xe4\xbd\xa9\xe5\xbe\xb7|4|D5BA8754-CA6F-408A-AEC9-592CCD94E2BF|554|1243|DeviceLogoutLog']
+2018-01-26 16:18:54,336[DEBUG][12662][140188511500032][26]开始deviceonline处理!!!!
+2018-01-26 16:18:54,336[DEBUG][12662][140188511500032][53]对应的key为:ROYAL:DEVICEONLINE:NIK-AHXY:all,filed为:D5BA8754-CA6F-408A-AEC9-592CCD94E2BF
+2018-01-26 16:18:54,337[DEBUG][12662][140188511500032][55]当前value值为:{"nk_pspg0en0z07g6wsdg9": 3729}
+2018-01-26 16:18:54,337[DEBUG][12662][140188511500032][68]新的value值为:{"nk_pspg0en0z07g6wsdg9": 4972}
+2018-01-26 16:18:54,337[DEBUG][12662][140188511500032][28]开始uuiddevice处理!!!!
+2018-01-26 16:18:54,337[DEBUG][12662][140188511500032][83]对应的key为:ROYAL:UUIDDEVICE:NIK-AHXY:all,filed为:nk_pspg0en0z07g6wsdg9
+2018-01-26 16:18:54,337[DEBUG][12662][140188511500032][85]当前value值为:{"D5BA8754-CA6F-408A-AEC9-592CCD94E2BF": 6}
+2018-01-26 16:18:54,338[DEBUG][12662][140188511500032][98]新的value值为:{"D5BA8754-CA6F-408A-AEC9-592CCD94E2BF": 7}
+2018-01-26 16:19:32,600[DEBUG][12662][140188511500032][15]kafka获取到的数据为:['2018-01-25 21:54:35|2|nk_pspg0en0z07g6wsdg9|2000398|\xe5\xa7\xac\xe7\x8e\x9b\xe4\xbd\xa9\xe5\xbe\xb7|4|D5BA8754-CA6F-408A-AEC9-592CCD94E2BF|554|1243|DeviceLogoutLog']
+2018-01-26 16:19:32,600[DEBUG][12662][140188511500032][26]开始deviceonline处理!!!!
+2018-01-26 16:19:32,600[DEBUG][12662][140188511500032][53]对应的key为:ROYAL:DEVICEONLINE:NIK-AHXY:all,filed为:D5BA8754-CA6F-408A-AEC9-592CCD94E2BF
+2018-01-26 16:19:32,601[DEBUG][12662][140188511500032][55]当前value值为:{"nk_pspg0en0z07g6wsdg9": 4972}
+2018-01-26 16:19:32,601[DEBUG][12662][140188511500032][68]新的value值为:{"nk_pspg0en0z07g6wsdg9": 6215}
+2018-01-26 16:19:32,602[DEBUG][12662][140188511500032][28]开始uuiddevice处理!!!!
+2018-01-26 16:19:32,602[DEBUG][12662][140188511500032][83]对应的key为:ROYAL:UUIDDEVICE:NIK-AHXY:all,filed为:nk_pspg0en0z07g6wsdg9
+2018-01-26 16:19:32,602[DEBUG][12662][140188511500032][85]当前value值为:{"D5BA8754-CA6F-408A-AEC9-592CCD94E2BF": 7}
+2018-01-26 16:19:32,602[DEBUG][12662][140188511500032][98]新的value值为:{"D5BA8754-CA6F-408A-AEC9-592CCD94E2BF": 8}
+2018-01-26 16:19:59,346[DEBUG][12662][140188511500032][15]kafka获取到的数据为:['2018-01-25 21:54:35|2|nk_pspg0en0z07g6wsdg7|2000398|\xe5\xa7\xac\xe7\x8e\x9b\xe4\xbd\xa9\xe5\xbe\xb7|4|D5BA8754-CA6F-408A-AEC9-592CCD94E2BF|554|1243|DeviceLogoutLog']
+2018-01-26 16:19:59,346[DEBUG][12662][140188511500032][26]开始deviceonline处理!!!!
+2018-01-26 16:19:59,346[DEBUG][12662][140188511500032][53]对应的key为:ROYAL:DEVICEONLINE:NIK-AHXY:all,filed为:D5BA8754-CA6F-408A-AEC9-592CCD94E2BF
+2018-01-26 16:19:59,346[DEBUG][12662][140188511500032][55]当前value值为:{"nk_pspg0en0z07g6wsdg9": 6215}
+2018-01-26 16:19:59,347[DEBUG][12662][140188511500032][68]新的value值为:{"nk_pspg0en0z07g6wsdg7": 1243, "nk_pspg0en0z07g6wsdg9": 6215}
+2018-01-26 16:19:59,347[DEBUG][12662][140188511500032][28]开始uuiddevice处理!!!!
+2018-01-26 16:19:59,347[DEBUG][12662][140188511500032][83]对应的key为:ROYAL:UUIDDEVICE:NIK-AHXY:all,filed为:nk_pspg0en0z07g6wsdg7
+2018-01-26 16:19:59,348[DEBUG][12662][140188511500032][85]当前value值为:None
+2018-01-26 16:19:59,348[DEBUG][12662][140188511500032][98]新的value值为:{"D5BA8754-CA6F-408A-AEC9-592CCD94E2BF": 1}
+2018-01-26 16:20:35,852[DEBUG][12662][140188511500032][15]kafka获取到的数据为:['']
+2018-01-26 16:21:09,996[DEBUG][12662][140188511500032][15]kafka获取到的数据为:['2018-01-25 21:54:35|2|nk_pspg0en0z07g6wsdg0|2000398|\xe5\xa7\xac\xe7\x8e\x9b\xe4\xbd\xa9\xe5\xbe\xb7|4|D5BA8754-CA6F-408A-AEC9-592CCD94E2BB|554|1243|DeviceLogoutLog']
+2018-01-26 16:21:09,996[DEBUG][12662][140188511500032][26]开始deviceonline处理!!!!
+2018-01-26 16:21:09,996[DEBUG][12662][140188511500032][53]对应的key为:ROYAL:DEVICEONLINE:NIK-AHXY:all,filed为:D5BA8754-CA6F-408A-AEC9-592CCD94E2BB
+2018-01-26 16:21:09,997[DEBUG][12662][140188511500032][55]当前value值为:None
+2018-01-26 16:21:09,997[DEBUG][12662][140188511500032][68]新的value值为:{"nk_pspg0en0z07g6wsdg0": 1243}
+2018-01-26 16:21:09,997[DEBUG][12662][140188511500032][28]开始uuiddevice处理!!!!
+2018-01-26 16:21:09,998[DEBUG][12662][140188511500032][83]对应的key为:ROYAL:UUIDDEVICE:NIK-AHXY:all,filed为:nk_pspg0en0z07g6wsdg0
+2018-01-26 16:21:09,998[DEBUG][12662][140188511500032][85]当前value值为:None
+2018-01-26 16:21:09,998[DEBUG][12662][140188511500032][98]新的value值为:{"D5BA8754-CA6F-408A-AEC9-592CCD94E2BB": 1}
+2018-01-26 17:53:24,629[WARNING][12662][140188511500032][51]Disconnected from Storm. Exiting.
+2018-01-26 17:57:31,656[DEBUG][1052][140189303146240][15]kafka获取到的数据为:['2018-01-25 21:54:35|2|nk_pspg0en0z07g6wsdg7|2000398|\xe5\xa7\xac\xe7\x8e\x9b\xe4\xbd\xa9\xe5\xbe\xb7|4|D5BA8754-CA6F-408A-AEC9-592CCD94E2BF|554|1243|DeviceLogoutLog']
+2018-01-26 17:57:31,664[DEBUG][1052][140189303146240][26]开始deviceonline处理!!!!
+2018-01-26 17:57:31,665[DEBUG][1052][140189303146240][53]对应的key为:ROYAL:DEVICEONLINE:NIK-AHXY:all,filed为:D5BA8754-CA6F-408A-AEC9-592CCD94E2BF
+2018-01-26 17:57:31,682[DEBUG][1052][140189303146240][55]当前value值为:None
+2018-01-26 17:57:31,682[DEBUG][1052][140189303146240][77]新的value值为:[{"onlineTime": 1243, "uuid": "nk_pspg0en0z07g6wsdg7"}]
+2018-01-26 17:57:31,683[DEBUG][1052][140189303146240][28]开始uuiddevice处理!!!!
+2018-01-26 17:57:31,683[DEBUG][1052][140189303146240][92]对应的key为:ROYAL:UUIDDEVICE:NIK-AHXY:all,filed为:nk_pspg0en0z07g6wsdg7
+2018-01-26 17:57:31,683[DEBUG][1052][140189303146240][94]当前value值为:None
+2018-01-26 17:57:31,683[DEBUG][1052][140189303146240][117]新的value值为:[{"deviceCount": 1, "deviceId": "D5BA8754-CA6F-408A-AEC9-592CCD94E2BF"}]
+2018-01-26 17:58:17,452[DEBUG][1052][140189303146240][15]kafka获取到的数据为:['2018-01-25 21:54:35|2|nk_pspg0en0z07g6wsdg7|2000398|\xe5\xa7\xac\xe7\x8e\x9b\xe4\xbd\xa9\xe5\xbe\xb7|4|D5BA8754-CA6F-408A-AEC9-592CCD94E2BF|554|1243|DeviceLogoutLog']
+2018-01-26 17:58:17,453[DEBUG][1052][140189303146240][26]开始deviceonline处理!!!!
+2018-01-26 17:58:17,453[DEBUG][1052][140189303146240][53]对应的key为:ROYAL:DEVICEONLINE:NIK-AHXY:all,filed为:D5BA8754-CA6F-408A-AEC9-592CCD94E2BF
+2018-01-26 17:58:17,453[DEBUG][1052][140189303146240][55]当前value值为:[{"onlineTime": 1243, "uuid": "nk_pspg0en0z07g6wsdg7"}]
+2018-01-26 17:58:17,453[ERROR][1052][140189303146240][240]Exception in bolt.run
+Traceback (most recent call last):
+  File "/data/storm/supervisor/stormdist/niku_logbolt-234-1516960496/resources/pyleus_venv/lib/python2.7/site-packages/pyleus/storm/component.py", line 238, in run
+    self.run_component()
+  File "/data/storm/supervisor/stormdist/niku_logbolt-234-1516960496/resources/pyleus_venv/lib/python2.7/site-packages/pyleus/storm/bolt.py", line 49, in run_component
+    self._process_tuple(tup)
+  File "/data/storm/supervisor/stormdist/niku_logbolt-234-1516960496/resources/pyleus_venv/lib/python2.7/site-packages/pyleus/storm/bolt.py", line 175, in _process_tuple
+    self.process_tuple(tup)
+  File "/data/storm/supervisor/stormdist/niku_logbolt-234-1516960496/resources/niku_logbolt/bolt_kafka_haxypublic.py", line 27, in process_tuple
+    haxypublic_handle_logic_obj.deviceonline()
+  File "module/haxypubliclogic.py", line 70, in deviceonline
+    value["onlieTime"] = value["onlieTime"] + int(onlinesecond)
+KeyError: 'onlieTime'
+2018-01-26 18:00:13,230[DEBUG][2379][140549658056448][15]kafka获取到的数据为:['2018-01-25 21:54:35|2|nk_pspg0en0z07g6wsdg7|2000398|\xe5\xa7\xac\xe7\x8e\x9b\xe4\xbd\xa9\xe5\xbe\xb7|4|D5BA8754-CA6F-408A-AEC9-592CCD94E2BF|554|1243|DeviceLogoutLog']
+2018-01-26 18:00:13,233[DEBUG][2379][140549658056448][26]开始deviceonline处理!!!!
+2018-01-26 18:00:13,234[DEBUG][2379][140549658056448][53]对应的key为:ROYAL:DEVICEONLINE:NIK-AHXY:all,filed为:D5BA8754-CA6F-408A-AEC9-592CCD94E2BF
+2018-01-26 18:00:13,237[DEBUG][2379][140549658056448][55]当前value值为:[{"onlineTime": 1243, "uuid": "nk_pspg0en0z07g6wsdg7"}]
+2018-01-26 18:00:13,238[DEBUG][2379][140549658056448][77]新的value值为:[{"onlineTime": 2486, "uuid": "nk_pspg0en0z07g6wsdg7"}]
+2018-01-26 18:00:13,239[DEBUG][2379][140549658056448][28]开始uuiddevice处理!!!!
+2018-01-26 18:00:13,240[DEBUG][2379][140549658056448][92]对应的key为:ROYAL:UUIDDEVICE:NIK-AHXY:all,filed为:nk_pspg0en0z07g6wsdg7
+2018-01-26 18:00:13,241[DEBUG][2379][140549658056448][94]当前value值为:[{"deviceCount": 1, "deviceId": "D5BA8754-CA6F-408A-AEC9-592CCD94E2BF"}]
+2018-01-26 18:00:13,241[DEBUG][2379][140549658056448][117]新的value值为:[{"deviceCount": 2, "deviceId": "D5BA8754-CA6F-408A-AEC9-592CCD94E2BF"}]
+2018-01-26 18:01:23,693[DEBUG][2379][140549658056448][15]kafka获取到的数据为:['2018-01-25 21:54:35|2|nk_pspg0en0z07g6wsdg7|2000398|\xe5\xa7\xac\xe7\x8e\x9b\xe4\xbd\xa9\xe5\xbe\xb7|4|D5BA8754-CA6F-408A-AEC9-592CCD94E2BF|554|1243|DeviceLogoutLog']
+2018-01-26 18:01:23,693[DEBUG][2379][140549658056448][26]开始deviceonline处理!!!!
+2018-01-26 18:01:23,693[DEBUG][2379][140549658056448][53]对应的key为:ROYAL:DEVICEONLINE:NIK-AHXY:all,filed为:D5BA8754-CA6F-408A-AEC9-592CCD94E2BF
+2018-01-26 18:01:23,694[DEBUG][2379][140549658056448][55]当前value值为:[{"onlineTime": 2486, "uuid": "nk_pspg0en0z07g6wsdg7"}]
+2018-01-26 18:01:23,694[DEBUG][2379][140549658056448][77]新的value值为:[{"onlineTime": 3729, "uuid": "nk_pspg0en0z07g6wsdg7"}]
+2018-01-26 18:01:23,694[DEBUG][2379][140549658056448][28]开始uuiddevice处理!!!!
+2018-01-26 18:01:23,695[DEBUG][2379][140549658056448][92]对应的key为:ROYAL:UUIDDEVICE:NIK-AHXY:all,filed为:nk_pspg0en0z07g6wsdg7
+2018-01-26 18:01:23,695[DEBUG][2379][140549658056448][94]当前value值为:[{"deviceCount": 2, "deviceId": "D5BA8754-CA6F-408A-AEC9-592CCD94E2BF"}]
+2018-01-26 18:01:23,695[DEBUG][2379][140549658056448][117]新的value值为:[{"deviceCount": 3, "deviceId": "D5BA8754-CA6F-408A-AEC9-592CCD94E2BF"}]
+2018-01-26 18:03:09,156[DEBUG][2379][140549658056448][15]kafka获取到的数据为:['']
+2018-01-26 18:03:12,174[DEBUG][2379][140549658056448][15]kafka获取到的数据为:['2018-01-25 21:54:35|2|nk_pspg0en0z07g6wsdg7|2000398|\xe5\xa7\xac\xe7\x8e\x9b\xe4\xbd\xa9\xe5\xbe\xb7|4|D5BA8754-CA6F-408A-AEC9-592CCD94E2BB|554|1243|DeviceLogoutLog']
+2018-01-26 18:03:12,174[DEBUG][2379][140549658056448][26]开始deviceonline处理!!!!
+2018-01-26 18:03:12,174[DEBUG][2379][140549658056448][53]对应的key为:ROYAL:DEVICEONLINE:NIK-AHXY:all,filed为:D5BA8754-CA6F-408A-AEC9-592CCD94E2BB
+2018-01-26 18:03:12,176[DEBUG][2379][140549658056448][55]当前value值为:None
+2018-01-26 18:03:12,176[DEBUG][2379][140549658056448][77]新的value值为:[{"onlineTime": 1243, "uuid": "nk_pspg0en0z07g6wsdg7"}]
+2018-01-26 18:03:12,176[DEBUG][2379][140549658056448][28]开始uuiddevice处理!!!!
+2018-01-26 18:03:12,176[DEBUG][2379][140549658056448][92]对应的key为:ROYAL:UUIDDEVICE:NIK-AHXY:all,filed为:nk_pspg0en0z07g6wsdg7
+2018-01-26 18:03:12,177[DEBUG][2379][140549658056448][94]当前value值为:[{"deviceCount": 3, "deviceId": "D5BA8754-CA6F-408A-AEC9-592CCD94E2BF"}]
+2018-01-26 18:03:12,177[DEBUG][2379][140549658056448][117]新的value值为:[{"deviceCount": 1, "deviceId": "D5BA8754-CA6F-408A-AEC9-592CCD94E2BB"}]
+2018-01-26 18:10:21,046[DEBUG][4669][139735920776960][15]kafka获取到的数据为:['2018-01-25 21:54:35|2|nk_pspg0en0z07g6wsdg7|2000398|\xe5\xa7\xac\xe7\x8e\x9b\xe4\xbd\xa9\xe5\xbe\xb7|4|D5BA8754-CA6F-408A-AEC9-592CCD94E2BF|554|1243|DeviceLogoutLog']
+2018-01-26 18:10:21,058[DEBUG][4669][139735920776960][26]开始deviceonline处理!!!!
+2018-01-26 18:10:21,058[DEBUG][4669][139735920776960][53]对应的key为:ROYAL:DEVICEONLINE:NIK-AHXY:all,filed为:D5BA8754-CA6F-408A-AEC9-592CCD94E2BF
+2018-01-26 18:10:21,085[DEBUG][4669][139735920776960][55]当前value值为:[{"onlineTime": 3729, "uuid": "nk_pspg0en0z07g6wsdg7"}]
+2018-01-26 18:10:21,085[DEBUG][4669][139735920776960][78]新的value值为:[{"onlineTime": 4972, "uuid": "nk_pspg0en0z07g6wsdg7"}]
+2018-01-26 18:10:21,085[DEBUG][4669][139735920776960][28]开始uuiddevice处理!!!!
+2018-01-26 18:10:21,085[DEBUG][4669][139735920776960][93]对应的key为:ROYAL:UUIDDEVICE:NIK-AHXY:all,filed为:nk_pspg0en0z07g6wsdg7
+2018-01-26 18:10:21,086[DEBUG][4669][139735920776960][95]当前value值为:[{"deviceCount": 1, "deviceId": "D5BA8754-CA6F-408A-AEC9-592CCD94E2BB"}]
+2018-01-26 18:10:21,086[DEBUG][4669][139735920776960][119]新的value值为:[{"deviceCount": 1, "deviceId": "D5BA8754-CA6F-408A-AEC9-592CCD94E2BB"}, {"deviceCount": 1, "deviceId": "D5BA8754-CA6F-408A-AEC9-592CCD94E2BF"}]
+2018-01-26 18:11:07,754[DEBUG][4669][139735920776960][15]kafka获取到的数据为:['2018-01-25 21:54:35|2|nk_pspg0en0z07g6wsdg7|2000398|\xe5\xa7\xac\xe7\x8e\x9b\xe4\xbd\xa9\xe5\xbe\xb7|4|D5BA8754-CA6F-408A-AEC9-592CCD94E2BF|554|1243|DeviceLogoutLog']
+2018-01-26 18:11:07,755[DEBUG][4669][139735920776960][26]开始deviceonline处理!!!!
+2018-01-26 18:11:07,755[DEBUG][4669][139735920776960][53]对应的key为:ROYAL:DEVICEONLINE:NIK-AHXY:all,filed为:D5BA8754-CA6F-408A-AEC9-592CCD94E2BF
+2018-01-26 18:11:07,755[DEBUG][4669][139735920776960][55]当前value值为:[{"onlineTime": 4972, "uuid": "nk_pspg0en0z07g6wsdg7"}]
+2018-01-26 18:11:07,755[DEBUG][4669][139735920776960][78]新的value值为:[{"onlineTime": 6215, "uuid": "nk_pspg0en0z07g6wsdg7"}]
+2018-01-26 18:11:07,756[DEBUG][4669][139735920776960][28]开始uuiddevice处理!!!!
+2018-01-26 18:11:07,756[DEBUG][4669][139735920776960][93]对应的key为:ROYAL:UUIDDEVICE:NIK-AHXY:all,filed为:nk_pspg0en0z07g6wsdg7
+2018-01-26 18:11:07,756[DEBUG][4669][139735920776960][95]当前value值为:[{"deviceCount": 1, "deviceId": "D5BA8754-CA6F-408A-AEC9-592CCD94E2BB"}, {"deviceCount": 1, "deviceId": "D5BA8754-CA6F-408A-AEC9-592CCD94E2BF"}]
+2018-01-26 18:11:07,756[DEBUG][4669][139735920776960][119]新的value值为:[{"deviceCount": 1, "deviceId": "D5BA8754-CA6F-408A-AEC9-592CCD94E2BB"}, {"deviceCount": 2, "deviceId": "D5BA8754-CA6F-408A-AEC9-592CCD94E2BF"}]
+2018-01-26 18:11:50,595[DEBUG][4669][139735920776960][15]kafka获取到的数据为:['2018-01-25 21:54:35|2|nk_pspg0en0z07g6wsdg7|2000398|\xe5\xa7\xac\xe7\x8e\x9b\xe4\xbd\xa9\xe5\xbe\xb7|4|D5BA8754-CA6F-408A-AEC9-592CCD94E2BD|554|1243|DeviceLogoutLog']
+2018-01-26 18:11:50,595[DEBUG][4669][139735920776960][26]开始deviceonline处理!!!!
+2018-01-26 18:11:50,596[DEBUG][4669][139735920776960][53]对应的key为:ROYAL:DEVICEONLINE:NIK-AHXY:all,filed为:D5BA8754-CA6F-408A-AEC9-592CCD94E2BD
+2018-01-26 18:11:50,596[DEBUG][4669][139735920776960][55]当前value值为:None
+2018-01-26 18:11:50,596[DEBUG][4669][139735920776960][78]新的value值为:[{"onlineTime": 1243, "uuid": "nk_pspg0en0z07g6wsdg7"}]
+2018-01-26 18:11:50,597[DEBUG][4669][139735920776960][28]开始uuiddevice处理!!!!
+2018-01-26 18:11:50,597[DEBUG][4669][139735920776960][93]对应的key为:ROYAL:UUIDDEVICE:NIK-AHXY:all,filed为:nk_pspg0en0z07g6wsdg7
+2018-01-26 18:11:50,597[DEBUG][4669][139735920776960][95]当前value值为:[{"deviceCount": 1, "deviceId": "D5BA8754-CA6F-408A-AEC9-592CCD94E2BB"}, {"deviceCount": 2, "deviceId": "D5BA8754-CA6F-408A-AEC9-592CCD94E2BF"}]
+2018-01-26 18:11:50,598[DEBUG][4669][139735920776960][119]新的value值为:[{"deviceCount": 1, "deviceId": "D5BA8754-CA6F-408A-AEC9-592CCD94E2BB"}, {"deviceCount": 2, "deviceId": "D5BA8754-CA6F-408A-AEC9-592CCD94E2BF"}, {"deviceCount": 1, "deviceId": "D5BA8754-CA6F-408A-AEC9-592CCD94E2BD"}]
+2018-01-26 18:12:15,155[DEBUG][4669][139735920776960][15]kafka获取到的数据为:['2018-01-25 21:54:35|2|nk_pspg0en0z07g6wsdg7|2000398|\xe5\xa7\xac\xe7\x8e\x9b\xe4\xbd\xa9\xe5\xbe\xb7|4|D5BA8754-CA6F-408A-AEC9-592CCD94E2BB|554|1243|DeviceLogoutLog']
+2018-01-26 18:12:15,155[DEBUG][4669][139735920776960][26]开始deviceonline处理!!!!
+2018-01-26 18:12:15,156[DEBUG][4669][139735920776960][53]对应的key为:ROYAL:DEVICEONLINE:NIK-AHXY:all,filed为:D5BA8754-CA6F-408A-AEC9-592CCD94E2BB
+2018-01-26 18:12:15,156[DEBUG][4669][139735920776960][55]当前value值为:[{"onlineTime": 1243, "uuid": "nk_pspg0en0z07g6wsdg7"}]
+2018-01-26 18:12:15,156[DEBUG][4669][139735920776960][78]新的value值为:[{"onlineTime": 2486, "uuid": "nk_pspg0en0z07g6wsdg7"}]
+2018-01-26 18:12:15,157[DEBUG][4669][139735920776960][28]开始uuiddevice处理!!!!
+2018-01-26 18:12:15,158[DEBUG][4669][139735920776960][93]对应的key为:ROYAL:UUIDDEVICE:NIK-AHXY:all,filed为:nk_pspg0en0z07g6wsdg7
+2018-01-26 18:12:15,158[DEBUG][4669][139735920776960][95]当前value值为:[{"deviceCount": 1, "deviceId": "D5BA8754-CA6F-408A-AEC9-592CCD94E2BB"}, {"deviceCount": 2, "deviceId": "D5BA8754-CA6F-408A-AEC9-592CCD94E2BF"}, {"deviceCount": 1, "deviceId": "D5BA8754-CA6F-408A-AEC9-592CCD94E2BD"}]
+2018-01-26 18:12:15,158[DEBUG][4669][139735920776960][119]新的value值为:[{"deviceCount": 2, "deviceId": "D5BA8754-CA6F-408A-AEC9-592CCD94E2BB"}, {"deviceCount": 2, "deviceId": "D5BA8754-CA6F-408A-AEC9-592CCD94E2BF"}, {"deviceCount": 1, "deviceId": "D5BA8754-CA6F-408A-AEC9-592CCD94E2BD"}]
+2018-01-26 18:13:02,042[DEBUG][4669][139735920776960][15]kafka获取到的数据为:['2018-01-25 21:54:35|2|nk_pspg0en0z07g6wsdg8|2000398|\xe5\xa7\xac\xe7\x8e\x9b\xe4\xbd\xa9\xe5\xbe\xb7|4|D5BA8754-CA6F-408A-AEC9-592CCD94E2BC|554|1243|DeviceLogoutLog']
+2018-01-26 18:13:02,043[DEBUG][4669][139735920776960][26]开始deviceonline处理!!!!
+2018-01-26 18:13:02,043[DEBUG][4669][139735920776960][53]对应的key为:ROYAL:DEVICEONLINE:NIK-AHXY:all,filed为:D5BA8754-CA6F-408A-AEC9-592CCD94E2BC
+2018-01-26 18:13:02,043[DEBUG][4669][139735920776960][55]当前value值为:None
+2018-01-26 18:13:02,043[DEBUG][4669][139735920776960][78]新的value值为:[{"onlineTime": 1243, "uuid": "nk_pspg0en0z07g6wsdg8"}]
+2018-01-26 18:13:02,044[DEBUG][4669][139735920776960][28]开始uuiddevice处理!!!!
+2018-01-26 18:13:02,044[DEBUG][4669][139735920776960][93]对应的key为:ROYAL:UUIDDEVICE:NIK-AHXY:all,filed为:nk_pspg0en0z07g6wsdg8
+2018-01-26 18:13:02,044[DEBUG][4669][139735920776960][95]当前value值为:None
+2018-01-26 18:13:02,044[DEBUG][4669][139735920776960][119]新的value值为:[{"deviceCount": 1, "deviceId": "D5BA8754-CA6F-408A-AEC9-592CCD94E2BC"}]
+2018-01-26 18:15:12,109[DEBUG][4669][139735920776960][15]kafka获取到的数据为:['2018-01-25 21:54:35|2|nk_pspg0en0z07g6wsdg9|2000399|\xe5\xa7\xac\xe7\x8e\x9b\xe4\xbd\xa9\xe5\xbe\xb7|4|D5BA8754-CA6F-408A-AEC9-592CCD94E2BF|554|1243|DeviceLogoutLog']
+2018-01-26 18:15:12,110[DEBUG][4669][139735920776960][26]开始deviceonline处理!!!!
+2018-01-26 18:15:12,110[DEBUG][4669][139735920776960][53]对应的key为:ROYAL:DEVICEONLINE:NIK-AHXY:all,filed为:D5BA8754-CA6F-408A-AEC9-592CCD94E2BF
+2018-01-26 18:15:12,110[DEBUG][4669][139735920776960][55]当前value值为:[{"onlineTime": 6215, "uuid": "nk_pspg0en0z07g6wsdg7"}]
+2018-01-26 18:15:12,110[DEBUG][4669][139735920776960][78]新的value值为:[{"onlineTime": 6215, "uuid": "nk_pspg0en0z07g6wsdg7"}, {"onlineTime": 1243, "uuid": "nk_pspg0en0z07g6wsdg9"}]
+2018-01-26 18:15:12,111[DEBUG][4669][139735920776960][28]开始uuiddevice处理!!!!
+2018-01-26 18:15:12,111[DEBUG][4669][139735920776960][93]对应的key为:ROYAL:UUIDDEVICE:NIK-AHXY:all,filed为:nk_pspg0en0z07g6wsdg9
+2018-01-26 18:15:12,111[DEBUG][4669][139735920776960][95]当前value值为:None
+2018-01-26 18:15:12,112[DEBUG][4669][139735920776960][119]新的value值为:[{"deviceCount": 1, "deviceId": "D5BA8754-CA6F-408A-AEC9-592CCD94E2BF"}]
+2018-01-26 18:15:36,453[DEBUG][4669][139735920776960][15]kafka获取到的数据为:['2018-01-25 21:54:35|2|nk_pspg0en0z07g6wsdg9|2000399|\xe5\xa7\xac\xe7\x8e\x9b\xe4\xbd\xa9\xe5\xbe\xb7|4|D5BA8754-CA6F-408A-AEC9-592CCD94E2BF|554|1243|DeviceLogoutLog']
+2018-01-26 18:15:36,453[DEBUG][4669][139735920776960][26]开始deviceonline处理!!!!
+2018-01-26 18:15:36,454[DEBUG][4669][139735920776960][53]对应的key为:ROYAL:DEVICEONLINE:NIK-AHXY:all,filed为:D5BA8754-CA6F-408A-AEC9-592CCD94E2BF
+2018-01-26 18:15:36,454[DEBUG][4669][139735920776960][55]当前value值为:[{"onlineTime": 6215, "uuid": "nk_pspg0en0z07g6wsdg7"}, {"onlineTime": 1243, "uuid": "nk_pspg0en0z07g6wsdg9"}]
+2018-01-26 18:15:36,454[DEBUG][4669][139735920776960][78]新的value值为:[{"onlineTime": 6215, "uuid": "nk_pspg0en0z07g6wsdg7"}, {"onlineTime": 2486, "uuid": "nk_pspg0en0z07g6wsdg9"}]
+2018-01-26 18:15:36,455[DEBUG][4669][139735920776960][28]开始uuiddevice处理!!!!
+2018-01-26 18:15:36,455[DEBUG][4669][139735920776960][93]对应的key为:ROYAL:UUIDDEVICE:NIK-AHXY:all,filed为:nk_pspg0en0z07g6wsdg9
+2018-01-26 18:15:36,455[DEBUG][4669][139735920776960][95]当前value值为:[{"deviceCount": 1, "deviceId": "D5BA8754-CA6F-408A-AEC9-592CCD94E2BF"}]
+2018-01-26 18:15:36,455[DEBUG][4669][139735920776960][119]新的value值为:[{"deviceCount": 2, "deviceId": "D5BA8754-CA6F-408A-AEC9-592CCD94E2BF"}]
+2018-01-26 18:16:15,028[DEBUG][4669][139735920776960][15]kafka获取到的数据为:['2018-01-25 21:54:35|2|nk_pspg0en0z07g6wsdg10|2000399|\xe5\xa7\xac\xe7\x8e\x9b\xe4\xbd\xa9\xe5\xbe\xb7|4|D5BA8754-CA6F-408A-AEC9-592CCD94E2BF|554|1243|DeviceLogoutLog']
+2018-01-26 18:16:15,028[DEBUG][4669][139735920776960][26]开始deviceonline处理!!!!
+2018-01-26 18:16:15,028[DEBUG][4669][139735920776960][53]对应的key为:ROYAL:DEVICEONLINE:NIK-AHXY:all,filed为:D5BA8754-CA6F-408A-AEC9-592CCD94E2BF
+2018-01-26 18:16:15,029[DEBUG][4669][139735920776960][55]当前value值为:[{"onlineTime": 6215, "uuid": "nk_pspg0en0z07g6wsdg7"}, {"onlineTime": 2486, "uuid": "nk_pspg0en0z07g6wsdg9"}]
+2018-01-26 18:16:15,029[DEBUG][4669][139735920776960][78]新的value值为:[{"onlineTime": 6215, "uuid": "nk_pspg0en0z07g6wsdg7"}, {"onlineTime": 2486, "uuid": "nk_pspg0en0z07g6wsdg9"}, {"onlineTime": 1243, "uuid": "nk_pspg0en0z07g6wsdg10"}]
+2018-01-26 18:16:15,029[DEBUG][4669][139735920776960][28]开始uuiddevice处理!!!!
+2018-01-26 18:16:15,030[DEBUG][4669][139735920776960][93]对应的key为:ROYAL:UUIDDEVICE:NIK-AHXY:all,filed为:nk_pspg0en0z07g6wsdg10
+2018-01-26 18:16:15,030[DEBUG][4669][139735920776960][95]当前value值为:None
+2018-01-26 18:16:15,030[DEBUG][4669][139735920776960][119]新的value值为:[{"deviceCount": 1, "deviceId": "D5BA8754-CA6F-408A-AEC9-592CCD94E2BF"}]
+2018-01-26 18:16:40,076[DEBUG][4669][139735920776960][15]kafka获取到的数据为:['2018-01-25 21:54:35|2|nk_pspg0en0z07g6wsdg10|2000399|\xe5\xa7\xac\xe7\x8e\x9b\xe4\xbd\xa9\xe5\xbe\xb7|4|D5BA8754-CA6F-408A-AEC9-592CCD94E2BT|554|1243|DeviceLogoutLog']
+2018-01-26 18:16:40,076[DEBUG][4669][139735920776960][26]开始deviceonline处理!!!!
+2018-01-26 18:16:40,077[DEBUG][4669][139735920776960][53]对应的key为:ROYAL:DEVICEONLINE:NIK-AHXY:all,filed为:D5BA8754-CA6F-408A-AEC9-592CCD94E2BT
+2018-01-26 18:16:40,077[DEBUG][4669][139735920776960][55]当前value值为:None
+2018-01-26 18:16:40,077[DEBUG][4669][139735920776960][78]新的value值为:[{"onlineTime": 1243, "uuid": "nk_pspg0en0z07g6wsdg10"}]
+2018-01-26 18:16:40,078[DEBUG][4669][139735920776960][28]开始uuiddevice处理!!!!
+2018-01-26 18:16:40,078[DEBUG][4669][139735920776960][93]对应的key为:ROYAL:UUIDDEVICE:NIK-AHXY:all,filed为:nk_pspg0en0z07g6wsdg10
+2018-01-26 18:16:40,078[DEBUG][4669][139735920776960][95]当前value值为:[{"deviceCount": 1, "deviceId": "D5BA8754-CA6F-408A-AEC9-592CCD94E2BF"}]
+2018-01-26 18:16:40,078[DEBUG][4669][139735920776960][119]新的value值为:[{"deviceCount": 1, "deviceId": "D5BA8754-CA6F-408A-AEC9-592CCD94E2BF"}, {"deviceCount": 1, "deviceId": "D5BA8754-CA6F-408A-AEC9-592CCD94E2BT"}]
+2018-01-26 18:17:20,412[DEBUG][4669][139735920776960][15]kafka获取到的数据为:['2018-01-25 21:54:35|2|nk_pspg0en0z07g6wsdg7|2000399|\xe5\xa7\xac\xe7\x8e\x9b\xe4\xbd\xa9\xe5\xbe\xb7|4|D5BA8754-CA6F-408A-AEC9-592CCD94E2BD|554|1243|DeviceLogoutLog']
+2018-01-26 18:17:20,412[DEBUG][4669][139735920776960][26]开始deviceonline处理!!!!
+2018-01-26 18:17:20,412[DEBUG][4669][139735920776960][53]对应的key为:ROYAL:DEVICEONLINE:NIK-AHXY:all,filed为:D5BA8754-CA6F-408A-AEC9-592CCD94E2BD
+2018-01-26 18:17:20,413[DEBUG][4669][139735920776960][55]当前value值为:[{"onlineTime": 1243, "uuid": "nk_pspg0en0z07g6wsdg7"}]
+2018-01-26 18:17:20,413[DEBUG][4669][139735920776960][78]新的value值为:[{"onlineTime": 2486, "uuid": "nk_pspg0en0z07g6wsdg7"}]
+2018-01-26 18:17:20,413[DEBUG][4669][139735920776960][28]开始uuiddevice处理!!!!
+2018-01-26 18:17:20,413[DEBUG][4669][139735920776960][93]对应的key为:ROYAL:UUIDDEVICE:NIK-AHXY:all,filed为:nk_pspg0en0z07g6wsdg7
+2018-01-26 18:17:20,414[DEBUG][4669][139735920776960][95]当前value值为:[{"deviceCount": 2, "deviceId": "D5BA8754-CA6F-408A-AEC9-592CCD94E2BB"}, {"deviceCount": 2, "deviceId": "D5BA8754-CA6F-408A-AEC9-592CCD94E2BF"}, {"deviceCount": 1, "deviceId": "D5BA8754-CA6F-408A-AEC9-592CCD94E2BD"}]
+2018-01-26 18:17:20,414[DEBUG][4669][139735920776960][119]新的value值为:[{"deviceCount": 2, "deviceId": "D5BA8754-CA6F-408A-AEC9-592CCD94E2BB"}, {"deviceCount": 2, "deviceId": "D5BA8754-CA6F-408A-AEC9-592CCD94E2BF"}, {"deviceCount": 2, "deviceId": "D5BA8754-CA6F-408A-AEC9-592CCD94E2BD"}]
